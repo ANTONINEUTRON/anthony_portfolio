@@ -5,6 +5,7 @@ import NavBar from '@/components/NavBar'
 import SideSection from '@/components/SideSection'
 import { Copy } from 'react-feather'
 import VisibleItemProvider from '@/context/VisibleItemProvider'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 const caslon = Libre_Caslon_Text({ subsets: ['latin'], weight: "400"})
@@ -36,7 +37,8 @@ export default function RootLayout({
           </div>
         </div>
         <footer className='flex text-center flex-col justify-center items-center'>
-          <span>This was created using NextJS and Tailwind CSS for styling</span>
+          <span>This was created using NextJS and Tailwind CSS for styling. 
+            <Link href="https://github.com/antonineutron/anthony-portfolio" className='text-blue-400 ml-1'>(Source)</Link></span>
           <span>&#169; antonineutron.</span>
         </footer>
         </div>

@@ -39,7 +39,7 @@ export default function Home() {
     if(isExpVs){
       viState.push("experience")
     }
-    viContext!!.setStringValue(viState)
+    viContext!!.setStringValue(viState as [])
   },[isAboutVs, isEduVs, isExpVs, isSkillsVs])
 
   return (
