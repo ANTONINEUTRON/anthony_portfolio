@@ -44,6 +44,19 @@ const ExperienceData: ExperienceItem[] =  [
         ],
     },
     {
+        position: "FUTMINNA Official App",
+        period: "2022",
+        organization: "Freelance",
+        description: "This is a mirror app of the Federal University of Minna Website. I was responsible for creating and deploy this application to playstore.",
+        tech: ["Flutter"],
+        url: [
+            {
+                title: "Playstore",
+                link: "https://play.google.com/store/apps/details?id=com.fg.futminna.minna_university"
+            }
+        ]
+    },
+    {
         position: "Story Line",
         period: "2022",
         organization: "Freelance",
@@ -57,39 +70,39 @@ const ExperienceData: ExperienceItem[] =  [
         ]
     },
     {
-        position: "FUTMINNA Official App",
-        period: "2022",
-        organization: "Freelance",
-        description: "I was contracted to create and deploy this application to playstore.",
-        tech: ["Flutter"],
+        position: "AlterPay",
+        period: "2021",
+        organization: "Personal",
+        description: "This was my submission to the 2021 FSI Financial inclusion hackathon. The application enable traders to receive charge a debit card by utilizing Google'MLKit vision api to extract the card details.",
+        tech: ["Kotlin", "XML", "Google MLKit"],
         url: [
             {
-                title: "Playstore",
-                link: "https://play.google.com/store/apps/details?id=com.fg.futminna.minna_university"
+                title: "Download link",
+                link: "https://github.com/ANTONINEUTRON/AlterPay"
+            },
+            {
+                title: "Github",
+                link: "https://github.com/ANTONINEUTRON/AlterPay"
             }
         ]
     },
-    // {
-    //     position: ,
-    //     period: ,
-    //     organization: ,
-    //     description: ,
-    //     tech: ,
-    // },
-    // {
-    //     position: ,
-    //     period: ,
-    //     organization: ,
-    //     description: ,
-    //     tech: ,
-    // },
-    // {
-    //     position: ,
-    //     period: ,
-    //     organization: ,
-    //     description: ,
-    //     tech: ,
-    // },
+    {
+        position: "Type Hit",
+        period: "2018",
+        organization: "Personal",
+        description: "This game is a fun personal project I undertook when starting out with Android development",
+        tech: ["Java", "XML"],
+        url: [
+            {
+                title: "Download link",
+                link: "https://drive.google.com/file/d/1-9EUXyP-2MHJnCX5jZGYtDFpH2zeQsqx/view?usp=drive_link"
+            },
+            {
+                title: "Github",
+                link: "https://github.com/ANTONINEUTRON/Type-Hit"
+            }
+        ]
+    }
 ]
 
 export default ExperienceData

@@ -1,15 +1,12 @@
-"use client"
 import { Tooltip } from "antd"
-import { useTheme } from "next-themes"
 import Image from "next/image"
 import Link from "next/link"
 import { Mail } from "react-feather"
 
 const NavBar = ()=>{
-    const {resolvedTheme} = useTheme()
     return (
         <header className="sticky top-0 h-20 z-50 shadow-md">
-            <nav className="container mx-auto px-4 pr-5 py-2 flex justify-between items-center">
+            <nav className="mx-auto pl-3 lg:pl-16 pr-5 py-2 flex justify-between items-center">
                 <Link href="#" className="font-bold text-xl">
                     <Image 
                         src={"/antoni-logo.png"} 
@@ -21,13 +18,13 @@ const NavBar = ()=>{
                 <ul className="flex items-center justify-between">
                 <li>
                     <Tooltip title="antonineutron@gmail.com">
-                        <Link href="mailto:antonineutron@gmail.com" className="px-4 mx-8 hover:text-primary">
+                        <Link target="_blank" href="mailto:antonineutron@gmail.com" className="px-4 mx-8 hover:text-primary">
                             <Mail size={40} className="w-16 text-white"/>
                         </Link>
                     </Tooltip>
                 </li>
                 <li>
-                    <Link href="https://twitter.com/neutronUNO" className="px-4 mx-8 invert hover:text-primary">
+                    <Link target="_blank" href="https://twitter.com/neutronUNO" className="px-4 mx-8 invert hover:text-primary">
                         <Image 
                             src={"/twitterx.png"} 
                             width={40}
@@ -37,7 +34,7 @@ const NavBar = ()=>{
                     </Link>
                 </li>
                 <li>
-                    <Link href="https://github.com/antonineutron" className="px-4 mx-8 invert hover:text-primary">
+                    <Link target="_blank" href="https://github.com/antonineutron" className="px-4 mx-8 invert hover:text-primary">
                         <Image 
                             src={"/github.png"} 
                             width={40}
@@ -47,7 +44,7 @@ const NavBar = ()=>{
                     </Link>
                 </li>
                 <li>
-                    <Link href="https://www.linkedin.com/in/anthony-ameh-b3b8aa1a6/" className="px-4 mx-8 mr-4 hover:text-primary">
+                    <Link target="_blank"  href="https://www.linkedin.com/in/anthony-ameh-b3b8aa1a6/" className="px-4 mx-8 mr-4 hover:text-primary">
                         <Image 
                             src={"/linkedin.png"} 
                             width={45}

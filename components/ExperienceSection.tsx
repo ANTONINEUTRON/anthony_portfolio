@@ -3,6 +3,7 @@ import Header from "./Header"
 import { ReactNode } from "react";
 import Link from "next/link";
 import { Link2 } from "react-feather";
+import Chip from "./Chip";
 
 const ExperienceSection = ()=>{
     return (
@@ -53,7 +54,7 @@ const ExperienceItem: React.FC<ExperienceItem> = ({position, period, organizatio
                 url.map(
                     (urll, index)=>{
                         return (
-                            <div className="flex hover:text-blue-400" key={index}>
+                            <div className="flex hover:text-blue-400 text-blue-200" key={index}>
                                 <Link href={urll.link}>{urll.title}</Link>
                                 <Link2 />
                             </div>
@@ -62,12 +63,12 @@ const ExperienceItem: React.FC<ExperienceItem> = ({position, period, organizatio
                 )
             }
             </div>
-            <div className="flex justify-center my-4">
+            <div className="grid grid-cols-3 lg:flex-row justify-center my-4">
                 {
                     tech.map(
                         (value, index)=>{
                             return (
-                                <div key={index}>
+                                <div key={index} className="m-1">
                                     <Chip title={value} />
                                 </div>
                             )
@@ -75,14 +76,6 @@ const ExperienceItem: React.FC<ExperienceItem> = ({position, period, organizatio
                     )
                 }
             </div>
-        </div>
-    )
-}
-
-const Chip = ({title}:{ title: string})=>{
-    return (
-        <div className="rounded-3xl bg-slate-600 text-primary px-8 py-1 mx-2">
-            {title}
         </div>
     )
 }

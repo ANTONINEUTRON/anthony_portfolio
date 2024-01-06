@@ -1,14 +1,50 @@
+"use client"
 import EducationItem from '@/components/EducationItem'
 import ExperienceSection from '@/components/ExperienceSection'
 import Header from '@/components/Header'
 import SideSection from '@/components/SideSection'
 import SkillItem from '@/components/SkillItem'
+import { VItemContextProps, VisibleItemContext } from '@/context/VisibleItemProvider'
+import isOnScreen from '@/hooks/isOnScreen'
 import Image from 'next/image'
+import { usePathname, useRouter } from 'next/navigation'
+import { useContext, useEffect, useRef } from 'react'
 
 export default function Home() {
+  const aboutRef = useRef<HTMLDivElement>(null)
+  const eduRef = useRef<HTMLDivElement>(null)
+  const skillsRef = useRef<HTMLDivElement>(null)
+  const expRef = useRef<HTMLDivElement>(null)
+  
+  const isAboutVs = isOnScreen(aboutRef)
+  const isEduVs = isOnScreen(eduRef)
+  const isSkillsVs = isOnScreen(skillsRef)
+  const isExpVs = isOnScreen(expRef)
+
+  const viContext  = useContext(VisibleItemContext)
+
+  useEffect(()=>{
+    let viState = []
+    if(isAboutVs){
+      viState.push("about")
+    } 
+    if(isEduVs){
+      console.log("Edu is vis");
+      
+      viState.push("education")
+    } 
+    if(isSkillsVs){
+      viState.push("skills")
+    } 
+    if(isExpVs){
+      viState.push("experience")
+    }
+    viContext!!.setStringValue(viState)
+  },[isAboutVs, isEduVs, isExpVs, isSkillsVs])
+
   return (
     <main className="flex min-h-screen flex-col justify-between">
-      <div className="#bio">
+      <div ref={aboutRef} id="about">
         <Header>About me</Header>
         <p>
           I have a deep passion for problem-solving, and software engineering provides 
@@ -28,9 +64,9 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="#education">
+      <div ref={eduRef} id="education">
         <Header>Education</Header>
-        <div className='flex'>
+        <div className='flex flex-col lg:flex-row'>
           <EducationItem 
             date='2017-2021' 
             institution="Federal University of Lafia"
@@ -42,9 +78,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="#skills">
+      <div ref={skillsRef} id="skills">
         <Header>Skills</Header>
-        <div className='grid grid-cols-2 gap-1'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-1'>
           <SkillItem>
             <Header>Language</Header>
             <div className='grid grid-cols-3 border'>
@@ -61,7 +97,7 @@ export default function Home() {
             <div className='grid grid-cols-2 border'>
               <div className='border p-1'>Flutter</div>
               <div className='border p-1'>Android (Views and Compose)</div>
-              <div className='border p-1'>React</div>
+              <div className='border p-1'>React & NextJs</div>
               <div className='border p-1'>Firebase</div>
             </div>
           </SkillItem>
@@ -86,7 +122,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="#projects">
+      <div ref={expRef} id="experience" className='mt-4'>
         <Header>Experience</Header>
         <ExperienceSection />
       </div>
