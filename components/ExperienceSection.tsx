@@ -54,16 +54,16 @@ const ExperienceItem: React.FC<ExperienceItem> = ({position, period, organizatio
                 url.map(
                     (urll, index)=>{
                         return (
-                            <div className="flex hover:text-blue-400 text-blue-200" key={index}>
+                            <div className="flex items-center justify-center hover:text-blue-400 text-blue-200" key={index}>
                                 <Link href={urll.link}>{urll.title}</Link>
-                                <Link2 />
+                                <Link2 size={15} className="ml-1"/>
                             </div>
                         )
                     }
                 )
             }
             </div>
-            <div className="grid grid-cols-3 lg:flex-row justify-center my-4">
+            <div className="grid grid-cols-3 justify-center my-4">
                 {
                     tech.map(
                         (value, index)=>{

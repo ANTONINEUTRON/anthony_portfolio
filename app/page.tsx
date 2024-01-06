@@ -29,8 +29,6 @@ export default function Home() {
       viState.push("about")
     } 
     if(isEduVs){
-      console.log("Edu is vis");
-      
       viState.push("education")
     } 
     if(isSkillsVs){

@@ -74,7 +74,7 @@ const ExperienceData: ExperienceItem[] =  [
         period: "2021",
         organization: "Personal",
         description: "This was my submission to the 2021 FSI Financial inclusion hackathon. The application enable traders to receive charge a debit card by utilizing Google'MLKit vision api to extract the card details.",
-        tech: ["Kotlin", "XML", "Google MLKit"],
+        tech: ["Kotlin", "XML"],
         url: [
             {
                 title: "Download link",
