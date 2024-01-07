@@ -113,8 +113,6 @@ export default function Home() {
             <div className='grid grid-cols-2 border'>
               <div className='border p-1'>Testing</div>
               <div className='border p-1'>CI/CD</div>
-              <div className='border p-1'>Communication</div>
-              <div className='border p-1'>Professionalism</div>
             </div>
           </SkillItem>
         </div>

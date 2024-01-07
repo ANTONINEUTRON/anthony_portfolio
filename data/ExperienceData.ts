@@ -5,9 +5,35 @@ const ExperienceData: ExperienceItem[] =  [
         position: "Mobile Application Development Instructor",
         period: "2023 - present",
         organization: "Tech4Dev",
-        description: "I have mentored over 80 students in mastering key concepts in mobile development using both native development and cross-platform frameworks. My engaging instruction enable the ladies get industry-recognized certifications, and in turn landed prestigious internships and full-time roles at various organizations. Through interactive lectures, hands-on projects, and personalized feedback, I fostered a thriving learning environment where students blossomed into confident, career-ready developers. Witnessing their success fuels my commitment to refining my curriculum and shaping the future of mobile app development.",
+        description: "I have mentored over 80 students in mastering key concepts in mobile development"+
+        " using both native development and cross-platform frameworks. My engaging instruction enable the "+
+        "ladies get industry-recognized certifications, and in turn landed prestigious internships and full-time "+
+        "roles at various organizations. Through interactive lectures, hands-on projects (some project urls below), and personalized feedback,"+
+        " I fostered a thriving learning environment where students blossomed into confident, career-ready developers. "+
+        "Witnessing their success fuels my commitment to refining my curriculum and shaping the future of mobile app development.",
         tech: ["kotlin", "flutter", "git", "firebase", "dart"],
-        url: [],
+        url: [
+            {
+                title: " Note app | Compose",
+                link: "https://github.com/ANTONINEUTRON/WTM_Notes_App",
+            },
+            {
+                title: "Ebook Reader | Flutter",
+                link: "https://github.com/ANTONINEUTRON/wmt_ebook_reader"
+            },
+            {
+                title: "ECommerce App | Kotlin",
+                link: "https://github.com/ANTONINEUTRON/WMTStore"
+            },
+            {
+                title: "News App | Flutter",
+                link: "https://github.com/ANTONINEUTRON/wmt_news_app"
+            },
+            {
+                title: "Whatsapp clone | kotlin",
+                link: "https://github.com/ANTONINEUTRON/WMTChat"
+            }
+        ],
     },
     {
         position: "Bold Sports",

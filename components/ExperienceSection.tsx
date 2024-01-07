@@ -49,7 +49,7 @@ const ExperienceItem: React.FC<ExperienceItem> = ({position, period, organizatio
             <p>
                 {description}
             </p>
-            <div className="flex justify-evenly">
+            <div className="flex justify-evenly flex-wrap">
             {
                 url.map(
                     (urll, index)=>{
@@ -68,7 +68,7 @@ const ExperienceItem: React.FC<ExperienceItem> = ({position, period, organizatio
                     tech.map(
                         (value, index)=>{
                             return (
-                                <div key={index} className="m-1">
+                                <div key={index} className="m-1 mx-2">
                                     <Chip title={value} />
                                 </div>
                             )
