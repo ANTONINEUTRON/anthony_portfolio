@@ -37,7 +37,7 @@ export default function RootLayout({
           </div>
         </div>
         <footer className='flex text-center flex-col justify-center items-center'>
-          <span>This was created using NextJS and Tailwind CSS for styling. 
+          <span>This was created using NextJS, Tailwind CSS and React Feather for styling. 
             <Link href="https://github.com/antonineutron/anthony-portfolio" className='text-blue-400 ml-1'>(Source)</Link></span>
           <span>&#169; antonineutron.</span>
         </footer>
