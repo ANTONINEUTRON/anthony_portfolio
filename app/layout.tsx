@@ -7,7 +7,6 @@ import { Copy } from 'react-feather'
 import VisibleItemProvider from '@/context/VisibleItemProvider'
 import Link from 'next/link'
 
-const inter = Inter({ subsets: ['latin'] })
 const caslon = Libre_Caslon_Text({ subsets: ['latin'], weight: "400"})
 
 export const metadata: Metadata = {
