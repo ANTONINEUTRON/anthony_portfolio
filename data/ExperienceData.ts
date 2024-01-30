@@ -3,14 +3,11 @@ import { ExperienceItem } from "@/components/ExperienceSection"
 const ExperienceData: ExperienceItem[] =  [
     {
         position: "Mobile Application Development Instructor",
-        period: "2023 - present",
+        period: "2022 - present",
         organization: "Tech4Dev",
-        description: "I have mentored over 80 students in mastering key concepts in mobile development"+
-        " using both native development and cross-platform frameworks. My engaging instruction enable the "+
-        "ladies get industry-recognized certifications, and in turn landed prestigious internships and full-time "+
-        "roles at various organizations. Through interactive lectures, hands-on projects (some project urls below), and personalized feedback,"+
-        " I fostered a thriving learning environment where students blossomed into confident, career-ready developers. "+
-        "Witnessing their success fuels my commitment to refining my curriculum and shaping the future of mobile app development.",
+        description: "During my involvement in this fellowship, as the facilitator for the mobile application development track, I mentored over 80 students, predominantly women, across two cohorts. Through my engaging instruction, participants learned essential concepts such as dependency injection, RESTful API fetching using Retrofit for Kotlin, and Dio for Flutter."+
+        "This comprehensive training program aimed to equip women in tech skills across Africa. The curriculum covered Kotlin with XML and Jetpack Compose, Firebase, Dart, Flutter, and Git. The ladies not only gained proficiency in these technologies but also earned industry-recognized certifications. "+
+        "My approach included interactive lectures, hands-on projects (some project URLs below), and personalized feedback. The outcome was remarkable as these empowered women secured prestigious internships and full-time roles at various organizations. The fellows emerged as confident, career-ready developers, showcasing the success and impact of the fellowship in nurturing talent and promoting diversity in the tech industry.",
         tech: ["kotlin", "flutter", "git", "firebase", "dart"],
         url: [
             {
@@ -86,7 +83,7 @@ const ExperienceData: ExperienceItem[] =  [
         position: "Story Line",
         period: "2022",
         organization: "Freelance",
-        description: "This is a mobile application for reading novels. I was responsible for creating and deploying the app to google  play store. In addition, I was responsible for creating the admin dashboard using react and also used firebase for the backend",
+        description: "In my freelance role, I was assigned the responsibility of end-to-end development and deployment of a mobile application dedicated to novel reading. This entailed creating the application for Android and iOS using Flutter, deploying it on the Google Play Store, and building the admin dashboard using React. Additionally, I utilized Firebase to create a backend, ensuring a seamless and comprehensive user experience for both frontend and backend functionalities.",
         tech: ["Flutter", "React", "Firebase"],
         url: [
             {
@@ -99,12 +96,12 @@ const ExperienceData: ExperienceItem[] =  [
         position: "AlterPay",
         period: "2021",
         organization: "Personal",
-        description: "This was my submission to the 2021 FSI Financial inclusion hackathon. The application enable traders to receive charge a debit card by utilizing Google'MLKit vision api to extract the card details.",
+        description: "This was my submission to the 2021 FSI Financial Inclusion Hackathon. The application, built with kotlin, enables traders to charge a debit card by utilizing Google's ML Kit Vision API to extract the card details. The solution secured the third position in the hackathon.",
         tech: ["Kotlin", "XML"],
         url: [
             {
                 title: "Download link",
-                link: "https://github.com/ANTONINEUTRON/AlterPay"
+                link: "https://drive.google.com/file/d/1qB2dFfBODmAPgXYWGyZ_9cU9kALIohca/view?usp=drive_link"
             },
             {
                 title: "Github",
