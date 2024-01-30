@@ -7,6 +7,7 @@ import SkillItem from '@/components/SkillItem'
 import { VItemContextProps, VisibleItemContext } from '@/context/VisibleItemProvider'
 import isOnScreen from '@/hooks/isOnScreen'
 import Image from 'next/image'
+import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { useContext, useEffect, useRef } from 'react'
 
@@ -121,6 +122,7 @@ export default function Home() {
       <div ref={expRef} id="experience" className='mt-4'>
         <Header>Experience</Header>
         <ExperienceSection />
+        <Link href="https://drive.google.com/file/d/1qB2dFfBODmAPgXYWGyZ_9cU9kALIohca/view?usp=sharing">More...</Link>
       </div>
     </main>
   )
