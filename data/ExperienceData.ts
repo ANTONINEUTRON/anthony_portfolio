@@ -41,10 +41,10 @@ const ExperienceData: ExperienceItem[] =  [
         period: "April 2024",
         organization: "Freelance",
         description: "This is a cross platform application which enable songwriters write and record songs",
-        tech: ["Flutter", "Dart", "Firebase"],
+        tech: ["Flutter", "Dart", "Firebase", "Bloc"],
         url: [
             {
-                title: "Download",
+                title: "Download link",
                 link: "https://lyricslab.antobuild.tech"
             }
         ]
@@ -65,6 +65,19 @@ const ExperienceData: ExperienceItem[] =  [
                 link: "https://apps.apple.com/us/app/bold-sports-ng/id1661467529"
             }
         ],
+    },
+    {
+        position: "Just Marrakech",
+        period: "August - November 2023",
+        organization: "Freelance",
+        description: "This is a cross platform application built for a Moroccan Tour Company which enable them facilitate the connection of tour guides and customers, in which they can transact, communicate and review each other through the app",
+        tech: ["Flutter", "Dart", "Firebase", "Stripe Integration", ],
+        url: [
+            {
+                title: "Download link",
+                link: "https://drive.google.com/file/d/1ys51fNgBEWmf_L7g6bTQA0O1ni_-EaG0/view?usp=sharing"
+            }
+        ]
     },
     {
         position: "Block Pub",
