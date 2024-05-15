@@ -3,13 +3,17 @@ import { ExperienceItem } from "@/components/ExperienceSection"
 const ExperienceData: ExperienceItem[] =  [
     {
         position: "Mobile Application Development Instructor",
-        period: "2022 - present",
+        period: "2022 - May, 2024",
         organization: "Tech4Dev",
         description: "During my involvement in this fellowship, as the facilitator for the mobile application development track, I mentored over 80 students, predominantly women, across two cohorts. Through my engaging instruction, participants learned essential concepts such as dependency injection, RESTful API fetching using Retrofit for Kotlin, and Dio for Flutter."+
         "This comprehensive training program aimed to equip women in tech skills across Africa. The curriculum covered Kotlin with XML and Jetpack Compose, Firebase, Dart, Flutter, and Git. The ladies not only gained proficiency in these technologies but also earned industry-recognized certifications. "+
         "My approach included interactive lectures, hands-on projects (some project URLs below), and personalized feedback. The outcome was remarkable as these empowered women secured prestigious internships and full-time roles at various organizations. The fellows emerged as confident, career-ready developers, showcasing the success and impact of the fellowship in nurturing talent and promoting diversity in the tech industry.",
         tech: ["kotlin", "flutter", "git", "firebase", "dart"],
         url: [
+            {
+                title: "Piggyvest App Clone | Flutter",
+                link: "https://github.com/ANTONINEUTRON/wtm_savings_app",
+            },
             {
                 title: " Note app | Compose",
                 link: "https://github.com/ANTONINEUTRON/WTM_Notes_App",
@@ -31,6 +35,19 @@ const ExperienceData: ExperienceItem[] =  [
                 link: "https://github.com/ANTONINEUTRON/WMTChat"
             }
         ],
+    },
+    {
+        position: "Lyrics Lab",
+        period: "April 2024",
+        organization: "Freelance",
+        description: "This is a cross platform application which enable songwriters write and record songs",
+        tech: ["Flutter"],
+        url: [
+            {
+                title: "Download",
+                link: "https://lyricslab.antobuild.tech"
+            }
+        ]
     },
     {
         position: "Bold Sports",
@@ -65,19 +82,6 @@ const ExperienceData: ExperienceItem[] =  [
                 link: "https://github.com/ANTONINEUTRON/block_pub"
             }
         ],
-    },
-    {
-        position: "FUTMINNA Official App",
-        period: "2022",
-        organization: "Freelance",
-        description: "This is a mirror app of the Federal University of Minna Website. I was responsible for creating and deploy this application to playstore.",
-        tech: ["Flutter"],
-        url: [
-            {
-                title: "Playstore",
-                link: "https://play.google.com/store/apps/details?id=com.fg.futminna.minna_university"
-            }
-        ]
     },
     {
         position: "Story Line",
