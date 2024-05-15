@@ -41,7 +41,7 @@ const ExperienceData: ExperienceItem[] =  [
         period: "April 2024",
         organization: "Freelance",
         description: "This is a cross platform application which enable songwriters write and record songs",
-        tech: ["Flutter"],
+        tech: ["Flutter", "Dart", "Firebase"],
         url: [
             {
                 title: "Download",
