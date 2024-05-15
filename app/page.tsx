@@ -122,7 +122,7 @@ export default function Home() {
       <div ref={expRef} id="experience" className='mt-4'>
         <Header>Experience</Header>
         <ExperienceSection />
-        <Link href="https://drive.google.com/file/d/1qB2dFfBODmAPgXYWGyZ_9cU9kALIohca/view?usp=sharing">More...</Link>
+        <Link href="https://drive.google.com/file/d/1uB4uh7qvRxKzp5zMViFyxKPrRD-_O9Kz/view?usp=drive_link">More...</Link>
       </div>
     </main>
   )
