@@ -40,11 +40,11 @@ const ExperienceData: ExperienceItem[] =  [
         position: "Lyrics Lab",
         period: "April 2024",
         organization: "Freelance",
-        description: "This is a cross platform application which enable songwriters write and record songs",
-        tech: ["Flutter", "Dart", "Firebase", "Bloc"],
+        description: "This is a cross platform application which enable songwriters write and record songs on the ",
+        tech: ["Flutter", "Dart", "Firebase", "Bloc", "Next JS"],
         url: [
             {
-                title: "Download link",
+                title: "Visit Site",
                 link: "https://lyricslab.antobuild.tech"
             }
         ]
