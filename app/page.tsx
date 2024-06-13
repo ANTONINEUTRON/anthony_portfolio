@@ -56,7 +56,7 @@ export default function Home() {
           Versatility, insightful thinking, and a touch of creative spark serve as my driving forces in addressing challenges.
         </p>
         <p>
-          My overarching goal is to push the boundaries of what's possible, both in terms of expanding my own skillset 
+          My goal is to push the boundaries of what's possible, both in terms of expanding my own skillset 
           and contributing to the creation of amazing products. Whether I'm developing innovative apps, mentoring aspiring 
           tech enthusiasts, or engaging in discussions about the future of technology, I am always on the lookout for the next 
           big opportunity.
@@ -85,19 +85,21 @@ export default function Home() {
             <div className='grid grid-cols-3 border'>
               <div className='border p-1'>Kotlin</div>
               <div className='border p-1'>Dart</div>
-              <div className='border p-1'>Javascript</div>
-              <div className='border p-1'>Typescript</div>
-              <div className='border p-1'>Java</div>
+              <div className='border p-1'>JS/TS</div>
+              <div className='border p-1'>PHP</div>
               <div className='border p-1'>SQL</div>
+              <div className='border p-1'>Java</div>
             </div>
           </SkillItem>
           <SkillItem>
             <Header>Technologies</Header>
-            <div className='grid grid-cols-2 border'>
+            <div className='grid grid-cols-3 border'>
               <div className='border p-1'>Flutter</div>
-              <div className='border p-1'>Android (Views and Compose)</div>
-              <div className='border p-1'>React & NextJs</div>
+              <div className='border p-1'>Android (XML and Compose)</div>
+              <div className='border p-1'>React|NextJs</div>
+              <div className='border p-1'>Laravel</div>
               <div className='border p-1'>Firebase</div>
+              <div className='border p-1'>Supabase</div>
             </div>
           </SkillItem>
           <SkillItem>
