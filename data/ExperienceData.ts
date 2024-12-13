@@ -2,9 +2,9 @@ import { ExperienceItem } from "@/components/ExperienceSection"
 
 const ExperienceData: ExperienceItem[] =  [
     {
-        position: "Developer Relations, Nasarawa State",
+        position: "Developer Relations",
         period: "August, 2024 - present",
-        organization: "Superteam Nigeria",
+        organization: "SuperteamNg Nasarawa State",
         description: "This role involves fostering community engagement, offering technical support, and creating resources to enhance the developer experience for members of SuperteamNG in Nasarawa State.",
         tech: ["Typescript", "Anchor", "Rust", "Community Management & Operations"],
         url:[]
