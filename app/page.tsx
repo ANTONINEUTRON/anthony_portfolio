@@ -48,10 +48,10 @@ export default function Home() {
         <p>
           I have a deep passion for problem-solving, and software engineering provides 
           the perfect outlet for me to channel that passion. 
-          I specialize in mobile application and frontend development, creating engaging projects across diverse domains such as AI and Blockchain
+          I specialize in frontend development (mobile and web application) with experience creating engaging projects across diverse domains such as Blockchain and AI
         </p>
         <p>
-          Beyond coding, my interests extend to a fascination with startups, 
+          Beyond coding, my interests extend to a fascination with startups and building tech enabled product, 
           a keen examination of the latest tech trends, and a perpetual exploration of creative problem-solving approaches. 
           Versatility, insightful thinking, and a touch of creative spark serve as my driving forces in addressing challenges.
         </p>
@@ -83,30 +83,30 @@ export default function Home() {
           <SkillItem>
             <Header>Language</Header>
             <div className='grid grid-cols-3 border'>
-              <div className='border p-1'>Kotlin</div>
               <div className='border p-1'>Dart</div>
               <div className='border p-1'>JS/TS</div>
+              <div className='border p-1'>Kotlin</div>
+              <div className='border p-1'>Rust</div>
               <div className='border p-1'>PHP</div>
-              <div className='border p-1'>SQL</div>
               <div className='border p-1'>Java</div>
             </div>
           </SkillItem>
           <SkillItem>
             <Header>Technologies</Header>
             <div className='grid grid-cols-3 border'>
+              <div className='border p-1'>NextJs</div>
               <div className='border p-1'>Flutter</div>
+              <div className='border p-1'>Anchor</div>
               <div className='border p-1'>Android (XML and Compose)</div>
-              <div className='border p-1'>React|NextJs</div>
-              <div className='border p-1'>Laravel</div>
+              <div className='border p-1'>Tailwind</div>
               <div className='border p-1'>Firebase</div>
-              <div className='border p-1'>Supabase</div>
             </div>
           </SkillItem>
           <SkillItem>
             <Header>Tools</Header>
             <div className='grid grid-cols-2 border'>
-              <div className='border p-1'>Android Studio</div>
               <div className='border p-1'>VS Code</div>
+              <div className='border p-1'>Android Studio</div>
               <div className='border p-1'>XCode</div>
               <div className='border p-1'>Git</div>
             </div>
@@ -116,6 +116,8 @@ export default function Home() {
             <div className='grid grid-cols-2 border'>
               <div className='border p-1'>Testing</div>
               <div className='border p-1'>CI/CD</div>
+              <div className='border p-1'>Community Management</div>
+              <div className='border p-1'>Developer Advocate</div>
             </div>
           </SkillItem>
         </div>
