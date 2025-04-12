@@ -46,28 +46,30 @@ export default function Home() {
       <div ref={aboutRef} id="about">
         <Header>About me</Header>
         <p>
-          I have a deep passion for problem-solving, and software engineering provides 
-          the perfect outlet for me to channel that passion. 
-          I specialize in frontend development (mobile and web application) with experience creating engaging projects across diverse domains such as Blockchain and AI
+          As a software engineer, I channel my problem-solving passion into creating 
+          impactful solutions. My expertise lies in building mobile and web applications, particularly in Blockchain and AI domains.
         </p>
         <p>
-          Beyond coding, my interests extend to a fascination with startups and building tech enabled product, 
-          a keen examination of the latest tech trends, and a perpetual exploration of creative problem-solving approaches. 
-          Versatility, insightful thinking, and a touch of creative spark serve as my driving forces in addressing challenges.
+          I'm deeply interested in building tech-enabled products and staying current 
+          with emerging technologies. My approach combines technical expertise with 
+          creative thinking to tackle complex challenges effectively.
         </p>
         <p>
-          My goal is to push the boundaries of what's possible, both in terms of expanding my own skillset 
-          and contributing to the creation of amazing products. Whether I'm developing innovative apps, mentoring aspiring 
-          tech enthusiasts, or engaging in discussions about the future of technology, I am always on the lookout for the next 
-          big opportunity.
+          Currently, I'm focused on expanding my technical boundaries while mentoring 
+          others and contributing to innovative projects. I'm always eager to explore 
+          new technologies and collaborate on transformative solutions.
         </p>
       </div>
 
       <div ref={eduRef} id="education">
         <Header>Education</Header>
         <div className='flex flex-col lg:flex-row'>
+          <EducationItem
+            date='2025'
+            certificate="Builders Cohort 2025"
+            institution='Solana Turbine Institute' />
           <EducationItem 
-            date='2017-2021' 
+            date='2018-2022' 
             institution="Federal University of Lafia"
             certificate='Bsc. Computer Science (First class honours)' />
           <EducationItem 
@@ -83,12 +85,10 @@ export default function Home() {
           <SkillItem>
             <Header>Language</Header>
             <div className='grid grid-cols-3 border'>
-              <div className='border p-1'>Dart</div>
-              <div className='border p-1'>JS/TS</div>
-              <div className='border p-1'>Kotlin</div>
               <div className='border p-1'>Rust</div>
-              <div className='border p-1'>PHP</div>
-              <div className='border p-1'>Java</div>
+              <div className='border p-1'>Typescript</div>
+              <div className='border p-1'>Dart</div>
+              <div className='border p-1'>Kotlin</div>
             </div>
           </SkillItem>
           <SkillItem>
@@ -97,7 +97,7 @@ export default function Home() {
               <div className='border p-1'>NextJs</div>
               <div className='border p-1'>Flutter</div>
               <div className='border p-1'>Anchor</div>
-              <div className='border p-1'>Android (XML and Compose)</div>
+              <div className='border p-1'>Actix-web</div>
               <div className='border p-1'>Tailwind</div>
               <div className='border p-1'>Firebase</div>
             </div>

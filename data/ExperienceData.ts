@@ -1,13 +1,21 @@
 import { ExperienceItem } from "@/components/ExperienceSection"
 
-const ExperienceData: ExperienceItem[] =  [
+const ExperienceData: ExperienceItem[] = [
+    {
+        position: "Software Engineer",
+        period: "March, 2024 - present",
+        organization: "Solana Turbine Institute",
+        description: "A contract position(under NDA) which involves building a solana integrated application for a client.",
+        tech: ["Typescript", "Anchor", "Rust", "Actix-web"],
+        url: []
+    },
     {
         position: "Developer Relations",
         period: "August, 2024 - present",
         organization: "SuperteamNg Nasarawa State",
         description: "This role involves fostering community engagement, offering technical support, and creating resources to enhance the developer experience for members of SuperteamNG in Nasarawa State.",
         tech: ["Typescript", "Anchor", "Rust", "Community Management & Operations"],
-        url:[]
+        url: []
     },
     {
         position: "Mobile Application Development Instructor",
