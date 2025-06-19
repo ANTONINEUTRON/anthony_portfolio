@@ -2,16 +2,8 @@ import { ExperienceItem } from "@/components/ExperienceSection"
 
 const ExperienceData: ExperienceItem[] = [
     {
-        position: "Software Engineer",
-        period: "March, 2024 - present",
-        organization: "Solana Turbine Institute",
-        description: "A contract position(under NDA) which involves building a solana integrated application for a client.",
-        tech: ["Typescript", "Anchor", "Rust", "Actix-web"],
-        url: []
-    },
-    {
         position: "Developer Relations",
-        period: "August, 2024 - present",
+        period: "August, 2024 - May, 2025",
         organization: "SuperteamNg Nasarawa State",
         description: "This role involves fostering community engagement, offering technical support, and creating resources to enhance the developer experience for members of SuperteamNG in Nasarawa State.",
         tech: ["Typescript", "Anchor", "Rust", "Community Management & Operations"],
@@ -53,10 +45,33 @@ const ExperienceData: ExperienceItem[] = [
         ],
     },
     {
+        position: "Tita flow",
+        period: "April - June 2025",
+        organization: "Freelance",
+        description: "This is a DApp built on solana which enable flexible and configurable fundraising for any project or cause. I was responsible for developing the frontend of the application using React and Next JS, integrating the solana wallet adapter for wallet connection, and implementing the smart contract using Anchor.",
+        tech: ["React", "Next JS", "Solana", "Anchor"],
+        url: [
+            {
+                title: "Visit Site",
+                link: "https://titaflow.com/"
+            },
+        ]
+    },
+    {
+        position: "Reckon",
+        period: "October - November 2024",
+        organization: "Freelance",
+        description: "This is a cross platform application targetted at Civil Engineers and Real Estate Developers. It enables them to manage their projects material, track expenses, and access marketplace. I was responsible for developing the application using Flutter and making REST API request for backend services.",
+        tech: ["Flutter", "Dart", "Firebase", "Bloc"],
+        url: [
+
+        ]
+    },
+    {
         position: "Lyrics Lab",
         period: "April 2024",
         organization: "Freelance",
-        description: "This is a cross platform application which enable songwriters write and record songs on the ",
+        description: "This is a cross platform application which enable songwriters write and record songs in app",
         tech: ["Flutter", "Dart", "Firebase", "Bloc", "Next JS"],
         url: [
             {
@@ -69,7 +84,7 @@ const ExperienceData: ExperienceItem[] = [
         position: "Bold Sports",
         period: "2022 - 2023",
         organization: "Bold Sports NG",
-        description: "I was responsible for developing and deploying the android and ios application for a sport news website. Flutter bloc was used for state management. I was able to successfully deploy the application to playstore and app store accessible through",
+        description: "I was responsible for developing and deploying the android and ios application for a sport news website using. Flutter bloc was used for state management. I was able to successfully deploy the application to playstore and app store accessible through",
         tech: ["Dart", "Flutter", "Firebase", "CodeMagic"],
         url: [
             {
