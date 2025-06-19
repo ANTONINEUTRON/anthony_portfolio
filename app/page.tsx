@@ -47,7 +47,7 @@ export default function Home() {
         <Header>About me</Header>
         <p>
           As a software engineer, I channel my problem-solving passion into creating 
-          impactful solutions. My expertise lies in building mobile and web applications, particularly in Blockchain and AI domains.
+          impactful solutions. My expertise lies in building mobile and web applications, with the experience in Blockchain and AI domains.
         </p>
         <p>
           I'm deeply interested in building tech-enabled products and staying current 
@@ -85,10 +85,11 @@ export default function Home() {
           <SkillItem>
             <Header>Language</Header>
             <div className='grid grid-cols-3 border'>
-              <div className='border p-1'>Rust</div>
               <div className='border p-1'>Typescript</div>
               <div className='border p-1'>Dart</div>
               <div className='border p-1'>Kotlin</div>
+              <div className='border p-1'>Rust</div>
+              <div className='border p-1'>SQL</div>
             </div>
           </SkillItem>
           <SkillItem>
@@ -97,7 +98,6 @@ export default function Home() {
               <div className='border p-1'>NextJs</div>
               <div className='border p-1'>Flutter</div>
               <div className='border p-1'>Anchor</div>
-              <div className='border p-1'>Actix-web</div>
               <div className='border p-1'>Tailwind</div>
               <div className='border p-1'>Firebase</div>
             </div>
