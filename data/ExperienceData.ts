@@ -71,7 +71,7 @@ const ExperienceData: ExperienceItem[] = [
         position: "Lyrics Lab",
         period: "April 2024",
         organization: "Freelance",
-        description: "This is a cross platform application which enable songwriters write and record songs in app",
+        description: "This is a cross platform mobile app built with flutter which enable songwriters write and record songs in app",
         tech: ["Flutter", "Dart", "Firebase", "Bloc", "Next JS"],
         url: [
             {
