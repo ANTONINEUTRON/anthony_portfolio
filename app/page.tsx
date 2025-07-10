@@ -46,18 +46,17 @@ export default function Home() {
       <div ref={aboutRef} id="about">
         <Header>About me</Header>
         <p>
-          As a software engineer, I channel my problem-solving passion into creating 
-          impactful solutions. My expertise lies in building mobile and web applications, with the experience in Blockchain and AI domains.
+          I'm a passionate software engineer who transforms complex problems into elegant digital solutions. 
+          Specializing in mobile and web development, I bring hands-on experience in cutting-edge domains 
+          including Blockchain technology and AI applications.
         </p>
         <p>
-          I'm deeply interested in building tech-enabled products and staying current 
-          with emerging technologies. My approach combines technical expertise with 
-          creative thinking to tackle complex challenges effectively.
+          What drives me is building tech-enabled products that make a real difference. I thrive at the 
+          intersection of technical excellence and creative innovation, leveraging emerging technologies 
+          to solve challenging problems in meaningful ways. Currently, I'm focused on expanding my technical boundaries while mentoring others and contributing to innovative projects. 
         </p>
         <p>
-          Currently, I'm focused on expanding my technical boundaries while mentoring 
-          others and contributing to innovative projects. I'm always eager to explore 
-          new technologies and collaborate on transformative solutions.
+          Currently, I'm focused on expanding my technical boundaries while mentoring others and contributing to innovative projects.
         </p>
       </div>
 
@@ -71,7 +70,7 @@ export default function Home() {
           <EducationItem 
             date='2018-2022' 
             institution="Federal University of Lafia"
-            certificate='Bsc. Computer Science (First class honours)' />
+            certificate='Bsc. Computer Science (First class)' />
           <EducationItem 
             date='2020' 
             certificate="Android Developer Certification"
@@ -81,28 +80,30 @@ export default function Home() {
 
       <div ref={skillsRef} id="skills">
         <Header>Skills</Header>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-1'>
+        <div className='grid grid-cols-1 gap-1'>
           <SkillItem>
             <Header>Language</Header>
             <div className='grid grid-cols-3 border'>
               <div className='border p-1'>Typescript</div>
               <div className='border p-1'>Dart</div>
               <div className='border p-1'>Kotlin</div>
+              <div className='border p-1'>PHP</div>
               <div className='border p-1'>Rust</div>
-              <div className='border p-1'>SQL</div>
+              <div className='border p-1'></div>
             </div>
           </SkillItem>
           <SkillItem>
             <Header>Technologies</Header>
             <div className='grid grid-cols-3 border'>
-              <div className='border p-1'>NextJs</div>
               <div className='border p-1'>Flutter</div>
-              <div className='border p-1'>Anchor</div>
-              <div className='border p-1'>Tailwind</div>
-              <div className='border p-1'>Firebase</div>
+              <div className='border p-1'>React Native</div>
+              <div className='border p-1'>NextJs</div>
+              <div className='border p-1'>XML & Compose</div>
+              <div className='border p-1'>Express.js</div>
+              <div className='border p-1'>Firebase & Supabase</div>
             </div>
           </SkillItem>
-          <SkillItem>
+          {/* <SkillItem>
             <Header>Tools</Header>
             <div className='grid grid-cols-2 border'>
               <div className='border p-1'>VS Code</div>
@@ -110,7 +111,7 @@ export default function Home() {
               <div className='border p-1'>XCode</div>
               <div className='border p-1'>Git</div>
             </div>
-          </SkillItem>
+          </SkillItem> */}
           <SkillItem>
             <Header>Others</Header>
             <div className='grid grid-cols-2 border'>

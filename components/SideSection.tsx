@@ -11,7 +11,7 @@ const SideSection = ({className}: {className: string})=>{
             <span className="text-primary lg:pl-2 pb-6">Hi, my name is</span><br/>
             <HighlightText>Anthony Ameh.</HighlightText> 
             <div className="my-3">
-                A Software Engineer with 5+ years of experience of building products for clients. 
+                A Software Engineer with 5+ years experience building great products across different domains. 
             </div>
             <div className="flex items-center justify-center md:pt-16">
             <div className="lg:w-2/5">
