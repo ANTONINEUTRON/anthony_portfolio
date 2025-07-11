@@ -61,7 +61,7 @@ const ExperienceData: ExperienceItem[] = [
         position: "Reckon",
         period: "October - November 2024",
         organization: "Freelance",
-        description: "This is a cross platform application targetted at Civil Engineers and Real Estate Developers. It enables them to manage their projects material, track expenses, and access marketplace. I was responsible for developing the application using Flutter and making REST API request for backend services.",
+        description: "This is a cross platform application targetted at Quantity surveyors, civil Engineers and real estate developers. It enables them to manage their projects material (BOQs), track expenses, and access marketplace. I was responsible for developing the application using Flutter and making REST API request for backend services.",
         tech: ["Flutter", "Dart", "Firebase", "Bloc"],
         url: [
 
