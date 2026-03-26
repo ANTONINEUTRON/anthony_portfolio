@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import HighlightText from "./HighlightText"
-import { Book } from "react-feather"
+import { Book, Code } from "react-feather"
 import { VisibleItemContext } from "@/context/VisibleItemProvider"
 import { useContext } from "react"
 
@@ -11,7 +11,7 @@ const SideSection = ({className}: {className: string})=>{
             <span className="text-primary lg:pl-2 pb-6">Hi, my name is</span><br/>
             <HighlightText>Anthony Ameh.</HighlightText> 
             <div className="my-3">
-                A Software Engineer with 5+ years experience building great products across different domains. 
+                A Software Engineer with 6 years experience building great products across different domains. 
             </div>
             <div className="flex items-center justify-center md:pt-16">
             <div className="lg:w-2/5">
@@ -53,6 +53,12 @@ const VertTabs = ()=>{
                         <path d="M18 7.5h-.423l-.452-1.09.3-.3a1.5 1.5 0 0 0 0-2.121L16.01 2.575a1.5 1.5 0 0 0-2.121 0l-.3.3-1.089-.452V2A1.5 1.5 0 0 0 11 .5H9A1.5 1.5 0 0 0 7.5 2v.423l-1.09.452-.3-.3a1.5 1.5 0 0 0-2.121 0L2.576 3.99a1.5 1.5 0 0 0 0 2.121l.3.3L2.423 7.5H2A1.5 1.5 0 0 0 .5 9v2A1.5 1.5 0 0 0 2 12.5h.423l.452 1.09-.3.3a1.5 1.5 0 0 0 0 2.121l1.415 1.413a1.5 1.5 0 0 0 2.121 0l.3-.3 1.09.452V18A1.5 1.5 0 0 0 9 19.5h2a1.5 1.5 0 0 0 1.5-1.5v-.423l1.09-.452.3.3a1.5 1.5 0 0 0 2.121 0l1.415-1.414a1.5 1.5 0 0 0 0-2.121l-.3-.3.452-1.09H18a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 18 7.5Zm-8 6a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z"/>
                     </svg>
                     Skills
+                </Link>
+            </li>
+            <li>
+                <Link href={{ pathname: "/", hash: "projects"}} className={`${viContext!!.stringValue.includes("projects") && "bg-primary"} text-slate-900 inline-flex items-center hover:bg-primary px-4 py-3 rounded-lg hover:text-gray-900 bg-gray-50 w-full`}>
+                    <Code className="w-4 h-4 me-2 "/> 
+                    Projects
                 </Link>
             </li>
             <li>

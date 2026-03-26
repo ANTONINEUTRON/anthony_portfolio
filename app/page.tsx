@@ -1,6 +1,7 @@
 "use client"
 import EducationItem from '@/components/EducationItem'
 import ExperienceSection from '@/components/ExperienceSection'
+import ProjectSection from '@/components/ProjectSection'
 import Header from '@/components/Header'
 import SideSection from '@/components/SideSection'
 import SkillItem from '@/components/SkillItem'
@@ -15,11 +16,13 @@ export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null)
   const eduRef = useRef<HTMLDivElement>(null)
   const skillsRef = useRef<HTMLDivElement>(null)
+  const projRef = useRef<HTMLDivElement>(null)
   const expRef = useRef<HTMLDivElement>(null)
   
   const isAboutVs = isOnScreen(aboutRef)
   const isEduVs = isOnScreen(eduRef)
   const isSkillsVs = isOnScreen(skillsRef)
+  const isProjVs = isOnScreen(projRef)
   const isExpVs = isOnScreen(expRef)
 
   const viContext  = useContext(VisibleItemContext)
@@ -35,11 +38,14 @@ export default function Home() {
     if(isSkillsVs){
       viState.push("skills")
     } 
+    if(isProjVs){
+      viState.push("projects")
+    }
     if(isExpVs){
       viState.push("experience")
     }
     viContext!!.setStringValue(viState as [])
-  },[isAboutVs, isEduVs, isExpVs, isSkillsVs])
+  },[isAboutVs, isEduVs, isExpVs, isSkillsVs, isProjVs])
 
   return (
     <main className="flex min-h-screen flex-col justify-between">
@@ -63,14 +69,14 @@ export default function Home() {
       <div ref={eduRef} id="education">
         <Header>Education</Header>
         <div className='flex flex-col lg:flex-row'>
-          <EducationItem
-            date='2025'
-            certificate="Builders Cohort 2025"
-            institution='Solana Turbine Institute' />
           <EducationItem 
             date='2018-2022' 
             institution="Federal University of Lafia"
             certificate='Bsc. Computer Science (First class)' />
+          <EducationItem
+            date='2025'
+            certificate="Builders Cohort 2025"
+            institution='Solana Turbine Institute' />
           <EducationItem 
             date='2020' 
             certificate="Android Developer Certification"
@@ -82,7 +88,7 @@ export default function Home() {
         <Header>Skills</Header>
         <div className='grid grid-cols-1 gap-1'>
           <SkillItem>
-            <Header>Language</Header>
+            <Header>Programming Languages</Header>
             <div className='grid grid-cols-3 border'>
               <div className='border p-1'>Typescript</div>
               <div className='border p-1'>Dart</div>
@@ -99,19 +105,10 @@ export default function Home() {
               <div className='border p-1'>React Native</div>
               <div className='border p-1'>NextJs</div>
               <div className='border p-1'>XML & Compose</div>
-              <div className='border p-1'>Express.js</div>
+              <div className='border p-1'>GCP</div>
               <div className='border p-1'>Firebase & Supabase</div>
             </div>
           </SkillItem>
-          {/* <SkillItem>
-            <Header>Tools</Header>
-            <div className='grid grid-cols-2 border'>
-              <div className='border p-1'>VS Code</div>
-              <div className='border p-1'>Android Studio</div>
-              <div className='border p-1'>XCode</div>
-              <div className='border p-1'>Git</div>
-            </div>
-          </SkillItem> */}
           <SkillItem>
             <Header>Others</Header>
             <div className='grid grid-cols-2 border'>
@@ -124,10 +121,16 @@ export default function Home() {
         </div>
       </div>
 
+
       <div ref={expRef} id="experience" className='mt-4'>
         <Header>Experience</Header>
         <ExperienceSection />
         <Link href="https://drive.google.com/file/d/1uB4uh7qvRxKzp5zMViFyxKPrRD-_O9Kz/view?usp=drive_link">More...</Link>
+      </div>
+      
+      <div ref={projRef} id="projects" className='mt-4'>
+        <Header>Projects</Header>
+        <ProjectSection />
       </div>
     </main>
   )
